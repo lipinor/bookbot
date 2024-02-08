@@ -16,10 +16,10 @@ def main():
     print("--- End report ---")
 
 
-def get_num_words(text):
+def get_num_words(text: str) -> int:
     return len(text.split())
 
-def get_book_text(book_path):
+def get_book_text(book_path: str) -> str:
     with open(book_path) as f:
         book_text = f.read()
     return book_text
